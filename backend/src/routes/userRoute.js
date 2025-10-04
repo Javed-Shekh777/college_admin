@@ -1,10 +1,7 @@
-const router = require("express").Router();
-const { sendCertificates, getUsers, deleteUser } = require("../controller/userController");
- 
+const { loginUser } = require('../controller/userController');
 
-router.route("/getUsers").get(getUsers);
-router.route('/send-certificates').post(sendCertificates)
-router.route('/deleteUser').delete(deleteUser)
+const router = require('express').Router();
 
+router.route('/login').post(loginUser);
 
 module.exports = router;

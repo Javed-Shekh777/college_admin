@@ -15,7 +15,7 @@ const Home = () => {
   const [totalStudent,setTotalStudent] = useState(0);
 
   useEffect(() => {
-      axios.get('/user/getUsers')
+      axios.get('/student/getUsers')
         .then(res => {
           console.log(res.data.data);
           setTotalStudent(res.data?.data?.length);

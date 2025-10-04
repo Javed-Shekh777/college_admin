@@ -6,6 +6,8 @@ const Navbar = ({ toggleSidebar }) => {
       <button onClick={toggleSidebar} className="md:hidden text-xl">
         <FaBars />
       </button>
+      <h1>Admin Panel</h1>
+
       <div className="flex items-center space-x-4">
         <FaUserCircle className="text-2xl" />
         <FaCog className="text-2xl" />

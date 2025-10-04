@@ -20,7 +20,7 @@ const Students = () => {
   console.log("Students:", students);
   const fetchStudents = async () => {
   try {
-    const res = await axios.get('/user/getUsers');
+    const res = await axios.get('/student/getUsers');
     setStudents(res.data.data);
     toast.success(res.data.message);
   } catch (err) {
@@ -64,7 +64,7 @@ const Students = () => {
 
     try {
 
-      const res = await axios.post('/user/send-certificates', { userIds: selectedIds });
+      const res = await axios.post('/student/send-certificates', { userIds: selectedIds });
       toast.success(res.data.message || 'Certificates sent successfully!');
       setMessage(res.data.message || 'Certificates sent successfully!');
     } catch (err) {
@@ -80,7 +80,7 @@ const Students = () => {
  // Delete User 
  const deleteUser = async (id) => {
   try {
-    const res = await axios.delete("/user/deleteUser", { data: { id } });
+    const res = await axios.delete("/student/deleteUser", { data: { id } });
     toast.success(res.data.message || "User deleted");
     fetchStudents(); // Refresh list
   } catch (error) {

@@ -3,10 +3,11 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const errorHandler = require("./utils/errorHandler");
 const app = express();
+const studentRoutes = require("./routes/studentRoute");
 const userRoutes = require("./routes/userRoute");
+
 const { allowedOrigins } = require("./constans");
 const path = require("path");
-
 
 const corsOptions = {
     credentials: true,
@@ -29,6 +30,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use("/api/user", userRoutes);
+app.use("/api/student", studentRoutes);
+
 
 
 
