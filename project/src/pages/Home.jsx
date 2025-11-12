@@ -35,11 +35,11 @@ const Home = () => {
           </div>
         </div>
       {stats.map((stat, index) => (
-        <div key={index} className={`flex items-center p-4 rounded-lg shadow-md text-white ${stat.color}`}>
-          <div className="text-3xl mr-4">{stat.icon}</div>
+        <div key={index} className={`flex items-center p-4 rounded-lg shadow-md text-white ${stat?.color}`}>
+          <div className="text-3xl mr-4">{stat?.icon}</div>
           <div>
             <h4 className="text-lg font-semibold">{stat.title}</h4>
-            <p className="text-xl">{stat.value}</p>
+            <p className="text-xl">{stat?.value}</p>
           </div>
         </div>
       ))}

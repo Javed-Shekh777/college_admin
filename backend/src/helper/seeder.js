@@ -1,5 +1,5 @@
-const User = require('../model/User');
-const Student = require('../model/Student');
+const User = require('../model/userModel');
+const Student = require('../model/studentModel');
 const {  user, students } = require('../utils/data');
 
 

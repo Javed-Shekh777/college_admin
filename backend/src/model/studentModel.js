@@ -12,19 +12,24 @@ const userSchema = new mongoose.Schema({
         required: true,
         unique: true,
         lowercase: true,
+        trim:true
     },
     mobile: {
         type: String,
         required: true,
+        trim:true
     },
     address: {
         type: String,
+         trim:true
     },
     fatherName: {
         type: String,
+         trim:true
     },
     motherName: {
         type: String,
+         trim:true
     },
     isParticipated: {
         type: Boolean,

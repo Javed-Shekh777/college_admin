@@ -127,7 +127,7 @@ const AddStudent = () => {
         </div>
 
         <div className="flex items-center space-x-2 mt-6">
-          <input type="checkbox" name="isParticipated" checked={formData.isParticipated} onChange={handleChange} />
+          <input type="checkbox" className="h-5 w-5 accent-blue-500" name="isParticipated" checked={formData.isParticipated} onChange={handleChange} />
           <label className="font-medium">Participated</label>
         </div>
       </div>

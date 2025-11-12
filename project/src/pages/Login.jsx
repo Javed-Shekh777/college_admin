@@ -9,6 +9,8 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+  toast.success("fhdsjf");
+
   const handleLogin = async (e) => {
     e.preventDefault();
       if(!email || !password){
@@ -24,7 +26,7 @@ const Login = () => {
       navigate('/');
     } catch (err) {
       console.log(err);
-            toast.error(err.response?.data?.message || 'Login failed');
+            toast.error(err  || 'Login failed');
     }
   };
 

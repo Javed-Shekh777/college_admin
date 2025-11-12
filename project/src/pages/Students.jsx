@@ -3,6 +3,7 @@ import axios from '../api/axios';
 import toast from 'react-hot-toast';
 import { FaRegEye } from 'react-icons/fa';
 import { MdDelete, MdEdit } from "react-icons/md";
+import {RxCross2} from 'react-icons/rx';
 
 
 
@@ -220,9 +221,9 @@ const StudentModal = ({ student, onClose }) => {
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 text-gray-500 hover:text-red-600 text-xl font-bold"
+          className="absolute cursor-pointer top-2 right-2 text-gray-500 hover:text-red-600 text-2xl font-bold"
         >
-          &times;
+          <RxCross2 />
         </button>
 
         {/* Header */}

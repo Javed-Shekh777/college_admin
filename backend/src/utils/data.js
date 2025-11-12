@@ -1,7 +1,7 @@
 exports.user =
 {
     "username": "admin",
-    "email": " admin@gmail.com",
+    "email": "admin@gmail.com",
     "password": "admin123"
 }
 

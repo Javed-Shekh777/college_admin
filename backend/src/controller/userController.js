@@ -5,7 +5,6 @@ const { errorResponse, successResponse } = require('../utils/response');
 const { Tokens } = require('../constans');
 
 exports.loginUser = async (req, res) => {
-    console.log(req.body);
     const { email, password } = req.body;
 
     try {
